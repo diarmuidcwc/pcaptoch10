@@ -10,5 +10,10 @@ cd pcaptoch10
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
+```
 
+## Running
+
+```bash
+python pcaptoch10.py  --pcap input.pcap --ch10 out.ch10 --tmats input.tmt
 ```
