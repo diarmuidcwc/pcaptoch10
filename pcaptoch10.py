@@ -116,7 +116,7 @@ def clone_ch10_payload(
             if frame.ipts is not None:
                 frame.ipts = RTCTime(frame.ipts.to_pinksheet_rtc())
             # Swap the endianness of the message
-            frame.minor_frame_data = endianness_swap(frame.minor_frame_data)
+            # frame.minor_frame_data = endianness_swap(frame.minor_frame_data)
         return p.pack(), p.minor_frame_size_bytes
 
     elif datatype == DataType.TIMEFORMAT_1:
